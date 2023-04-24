@@ -1,0 +1,882 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BackgroundImage /> should call critical fixed images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline-block; opacity: 0.99; width: 100px; height: 100px;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: none;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url('http://localhost/test_fixed_image.jpg');
+            background-image: url(string_of_base64);
+            opacity: 0; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            background-image: url('http://localhost/test_fixed_image.jpg');
+            
+            opacity: 1;
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should call critical fluid images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: none;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url('http://localhost/test_fluid_image.jpg');
+            background-image: url(string_of_base64);
+            opacity: 0; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            background-image: url('http://localhost/test_fluid_image.jpg');
+            
+            opacity: 1;
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should call critical images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline-block; opacity: 0.99; width: 100px; height: 100px;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should call multiple critical fixed images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline-block; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: none;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64),url(string_of_base64);
+            background-image: url(string_of_base64),url(string_of_base64);
+            opacity: 0; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            background-image: url(string_of_base64),url(string_of_base64);
+            
+            opacity: 1;
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should call multiple critical fluid images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64),url(string_of_base64),linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64),url(string_of_base64),linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should change style.display from 'inherit' to 'inline-block' 1`] = `
+<div>
+  <div
+    class="gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; opacity: 0.99; width: 100px; height: 100px;"
+  >
+    <style>
+      
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      testempty
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should create style tag at fixed with pseudo-elements 1`] = `
+<style>
+  
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+</style>
+`;
+
+exports[`<BackgroundImage /> should create style tag with pseudo-elements 1`] = `
+<style>
+  
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+</style>
+`;
+
+exports[`<BackgroundImage /> should render fixed size images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; display: inline-block; opacity: 0.99; width: 100px; height: 100px;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should render fluid images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should render multiple fluid images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64),url(string_of_base64),linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64),url(string_of_base64),linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should render stacked fixed size images 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; display: inline-block; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64),url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64),url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should render without opacity hack with truthy preserveStackingContext 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass  gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should return null without fluid / fixed 1`] = `<div />`;
+
+exports[`<BackgroundImage /> should work with BackgroundColor 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should work with another external class 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass test gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: none;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url('http://localhost/test_fluid_image.jpg');
+            background-image: url(string_of_base64);
+            opacity: 0; 
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            background-image: url('http://localhost/test_fluid_image.jpg');
+            
+            opacity: 1;
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should work with className 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="imageClass test gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: repeat-y; background-size: contain; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: repeat-y;
+background-size: contain;
+
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .imageClass.test.gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should work with fadeIn 1`] = `
+<div>
+  <div
+    alt="Alt text for the image"
+    class="gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    id="testid"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; display: inline; opacity: 0.99;"
+    title="Title for the image"
+  >
+    <style>
+      
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      test
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should work without external class 1`] = `
+<div>
+  <div
+    class="gbi-1393017994-73WakrfVbNJBaAmhQtEeDv"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; opacity: 0.99;"
+  >
+    <style>
+      
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before,
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            background-image: url(string_of_base64);
+            
+            opacity: 1; 
+          }
+          .gbi-1393017994-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            background-image: url(string_of_base64);
+            
+          }
+        
+    </style>
+    <h1>
+      testempty
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<BackgroundImage /> should work without fluid / fixed image when keepStatic is given 1`] = `
+<div>
+  <div
+    class="gbi-2113735767-73WakrfVbNJBaAmhQtEeDv"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; opacity: 0.99;"
+  >
+    <style>
+      
+          .gbi-2113735767-73WakrfVbNJBaAmhQtEeDv:before,
+          .gbi-2113735767-73WakrfVbNJBaAmhQtEeDv:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 250ms;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .gbi-2113735767-73WakrfVbNJBaAmhQtEeDv:before {
+            z-index: -100;
+            
+            
+            opacity: 1; 
+          }
+          .gbi-2113735767-73WakrfVbNJBaAmhQtEeDv:after {
+            z-index: -101;
+            
+            
+            
+          }
+        
+    </style>
+    <h1
+      id="kept-child"
+    >
+      I am a child
+    </h1>
+  </div>
+</div>
+`;

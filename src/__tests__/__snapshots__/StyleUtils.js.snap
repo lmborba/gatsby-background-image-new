@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`vendorPrefixBackgroundStyles() should return vendor prefixed backgroundStyles with defaults 1`] = `"transition: opacity 0.5s ease 0.25s;"`;
+
+exports[`vendorPrefixBackgroundStyles() should return vendor prefixed backgroundStyles with parameters 1`] = `"transition: opacity 0.5s ease contain;"`;

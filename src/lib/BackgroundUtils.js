@@ -115,7 +115,7 @@ export const getBackgroundStylesForSingleClass = className => {
  * @return {*}
  */
 const getBackgroundStyles = className => {
-  if (isBrowser()) {
+  //if (isBrowser()) {
     const classes = stringToArray(className);
     if (classes instanceof Array) {
       const classObjects = [];
@@ -125,8 +125,8 @@ const getBackgroundStyles = className => {
       return Object.assign(...classObjects);
     }
     return getBackgroundStylesForSingleClass(className);
-  }
-  return {};
+  //}
+  //return {};
 };
 
 export default getBackgroundStyles;

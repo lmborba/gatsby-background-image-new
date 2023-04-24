@@ -26,9 +26,9 @@ export const fixClassName = ({ className, ...props }) => {
   const additionalClassname = uuid.generate();
 
   // Create random "uniquely hashed" additionalClass if needed.
-  const randomClass = ` gbi-${hashString(
-    (imageData && imageData.srcSet) || className || `noclass`
-  )}-${additionalClassname}`;
+  // const randomClass = ` gbi-${hashString(
+  //   (imageData && imageData.srcSet) || className || `noclass`
+  // )}-${additionalClassname}`;
 
   // Should an element already exist or have no className, add randomized class.
   const additionalClass = elementExists || !className ? randomClass : ``;

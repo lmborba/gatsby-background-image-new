@@ -19,17 +19,17 @@ var _SimpleUtils = require("./lib/SimpleUtils");
 var _excluded = ["className", "style", "fluid", "fixed", "backgroundColor", "durationFadeIn", "Tag", "children", "keepStatic"];
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -56,6 +56,35 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     // IntersectionObserver listeners (if available).
     _defineProperty(_assertThisInitialized(_this), "cleanUpListeners", void 0);
+    _defineProperty(_assertThisInitialized(_this), "intersectionListener", function () {
+      var imageInCache = (0, _ImageCache.inImageCache)(_this.props);
+      if (!_this.state.isVisible && _typeof(_this.props.onStartLoad) === "function") {
+        _this.props.onStartLoad({
+          wasCached: imageInCache
+        });
+      }
+
+      // imgCached and imgLoaded must update after the image is activated and
+      // isVisible is true. Once it is, imageRef becomes "accessible" for imgCached.
+      // imgLoaded and imgCached are in a 2nd setState call to be changed together,
+      // avoiding initiating unnecessary animation frames from style changes when
+      // setting next imageState.
+      _this.imageRef = (0, _ImageRef.activatePictureRef)(_this.imageRef, _this.props, _this.selfRef);
+      _this.setState(function (state) {
+        return {
+          isVisible: true,
+          imageState: state.imageState + 1
+        };
+      }, function () {
+        _this.setState(function (state) {
+          return {
+            imgLoaded: imageInCache,
+            imgCached: (0, _ImageRef.hasActivatedPictureRefs)(_this.imageRef),
+            imageState: state.imageState + 1
+          };
+        });
+      });
+    });
     var convertedProps = (0, _HelperUtils.convertProps)(props);
 
     // Default settings for browser without Intersection Observer available.
@@ -102,11 +131,11 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
     // Bind handlers to class.
     _this.handleImageLoaded = _this.handleImageLoaded.bind(_assertThisInitialized(_this));
     _this.handleRef = _this.handleRef.bind(_assertThisInitialized(_this));
-    var convertedPropsNew = convertedProps;
-    convertedPropsNew.isVisible = isVisible;
 
     // Create reference(s) to an Image loaded via picture element in background.
-    _this.imageRef = (0, _ImageRef.createPictureRef)(convertedPropsNew, _this.handleImageLoaded);
+    _this.imageRef = (0, _ImageRef.createPictureRef)(_objectSpread(_objectSpread({}, convertedProps), {}, {
+      isVisible: isVisible
+    }), _this.handleImageLoaded);
     _this.selfRef = null;
     _this.state = {
       isVisible: isVisible,
@@ -193,9 +222,9 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
             propName: "src",
             returnArray: true
           });
-          var convertedPropsNew = convertedProps;
-          convertedPropsNew.isVisible = _this2.state.isVisible;
-          _this2.imageRef = (0, _ImageRef.createPictureRef)(convertedPropsNew, _this2.handleImageLoaded);
+          _this2.imageRef = (0, _ImageRef.createPictureRef)(_objectSpread(_objectSpread({}, convertedProps), {}, {
+            isVisible: _this2.state.isVisible
+          }), _this2.handleImageLoaded);
         });
       }
     }
@@ -218,38 +247,6 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
       if (this.cleanUpListeners) {
         this.cleanUpListeners();
       }
-    }
-  }, {
-    key: "intersectionListener",
-    value: function intersectionListener() {
-      var _this3 = this;
-      var imageInCache = (0, _ImageCache.inImageCache)(this.props);
-      if (!this.state.isVisible && _typeof(this.props.onStartLoad) === "function") {
-        this.props.onStartLoad({
-          wasCached: imageInCache
-        });
-      }
-
-      // imgCached and imgLoaded must update after the image is activated and
-      // isVisible is true. Once it is, imageRef becomes "accessible" for imgCached.
-      // imgLoaded and imgCached are in a 2nd setState call to be changed together,
-      // avoiding initiating unnecessary animation frames from style changes when
-      // setting next imageState.
-      this.imageRef = (0, _ImageRef.activatePictureRef)(this.imageRef, this.props, this.selfRef);
-      this.setState(function (state) {
-        return {
-          isVisible: true,
-          imageState: state.imageState + 1
-        };
-      }, function () {
-        _this3.setState(function (state) {
-          return {
-            imgLoaded: imageInCache,
-            imgCached: (0, _ImageRef.hasActivatedPictureRefs)(_this3.imageRef),
-            imageState: state.imageState + 1
-          };
-        });
-      });
     }
   }, {
     key: "handleRef",

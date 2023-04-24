@@ -82,11 +82,11 @@ class BackgroundImage extends React.Component {
     this.handleImageLoaded = this.handleImageLoaded.bind(this);
     this.handleRef = this.handleRef.bind(this);
 
-    let convertedPropsNew = convertedProps;
-    convertedPropsNew.isVisible = isVisible;
-
     // Create reference(s) to an Image loaded via picture element in background.
-    this.imageRef = createPictureRef(convertedPropsNew, this.handleImageLoaded);
+    this.imageRef = createPictureRef(
+      { ...convertedProps, isVisible },
+      this.handleImageLoaded
+    );
 
     this.selfRef = null;
 
@@ -173,11 +173,8 @@ class BackgroundImage extends React.Component {
               propName: `src`,
               returnArray: true,
             });
-          let convertedPropsNew = convertedProps;
-          convertedPropsNew.isVisible = this.state.isVisible;
-
           this.imageRef = createPictureRef(
-            convertedPropsNew,
+            { ...convertedProps, isVisible: this.state.isVisible },
             this.handleImageLoaded
           );
         }
@@ -204,7 +201,7 @@ class BackgroundImage extends React.Component {
     }
   }
 
-  intersectionListener() {
+  intersectionListener = () => {
     const imageInCache = inImageCache(this.props);
     if (!this.state.isVisible && typeof this.props.onStartLoad === `function`) {
       this.props.onStartLoad({ wasCached: imageInCache });
@@ -229,7 +226,7 @@ class BackgroundImage extends React.Component {
         }));
       }
     );
-  }
+  };
 
   handleRef(ref) {
     this.selfRef = ref;

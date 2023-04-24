@@ -97,8 +97,16 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
     // already in the browser cache so it's cheap to just show directly.
     var seenBefore = (0, _ImageCache.inImageCache)(convertedProps);
 
+    // Browser with Intersection Observer available
+    if (!seenBefore && (0, _SimpleUtils.isBrowser)() && window.IntersectionObserver) {
+      isVisible = false;
+      IOSupported = true;
+    }
+
     // Never render image during SSR
-    isVisible = false;
+    if (!(0, _SimpleUtils.isBrowser)()) {
+      isVisible = false;
+    }
 
     // Force render for critical images.
     if (convertedProps.critical) {
@@ -107,7 +115,7 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
     }
 
     // Check if a noscript element should be included, check on isBrowser() for #131.
-    var hasNoScript = !(convertedProps.critical && !fadeIn);
+    var hasNoScript = !(convertedProps.critical && !fadeIn) && !(0, _SimpleUtils.isBrowser)();
 
     // Set initial image state for transitioning.
     var imageState = 0;
@@ -369,7 +377,9 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
         dangerouslySetInnerHTML: {
           __html: pseudoStyles
         }
-      }), this.state.hasNoScript && /*#__PURE__*/_react["default"].createElement("noscript", null, /*#__PURE__*/_react["default"].createElement("style", {
+      }), this.state.hasNoScript && /*#__PURE__*/_react["default"].createElement("noscript", {
+        key: "code_drawn"
+      }, /*#__PURE__*/_react["default"].createElement("style", {
         dangerouslySetInnerHTML: {
           __html: noScriptPseudoStyles
         }

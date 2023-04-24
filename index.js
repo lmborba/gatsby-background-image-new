@@ -360,8 +360,8 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
       });
 
       // console.table(newImageSettings)
-      // console.log(pseudoStyles)
-      // console.log(image, noScriptPseudoStyles)
+      console.log("pseudoStyles: ", pseudoStyles);
+      console.log("noScript: ", noScriptPseudoStyles);
 
       // Switch key between fluid & fixed.
       var componentKey = "".concat(fluid ? "fluid" : "").concat(fixed ? "fixed" : "", "-").concat(JSON.stringify(noScriptImageData.srcSet));

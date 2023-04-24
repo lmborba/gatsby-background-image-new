@@ -22,7 +22,7 @@ import {
 } from "./lib/StyleUtils";
 import { createNoScriptStyles, createPseudoStyles } from "./lib/StyleCreation";
 import { listenToIntersections } from "./lib/IntersectionObserverUtils";
-import { isBrowser, isString } from "./lib/SimpleUtils";
+import { isString } from "./lib/SimpleUtils";
 
 /**
  * Main Lazy-loading React background-image component
@@ -47,16 +47,8 @@ class BackgroundImage extends React.Component {
     // already in the browser cache so it's cheap to just show directly.
     const seenBefore = inImageCache(convertedProps);
 
-    // Browser with Intersection Observer available
-    if (!seenBefore && isBrowser() && window.IntersectionObserver) {
-      isVisible = false;
-      IOSupported = true;
-    }
-
     // Never render image during SSR
-    if (!isBrowser()) {
-      isVisible = false;
-    }
+    isVisible = false;
 
     // Force render for critical images.
     if (convertedProps.critical) {
@@ -65,7 +57,7 @@ class BackgroundImage extends React.Component {
     }
 
     // Check if a noscript element should be included, check on isBrowser() for #131.
-    const hasNoScript = !(convertedProps.critical && !fadeIn) && !isBrowser();
+    const hasNoScript = !(convertedProps.critical && !fadeIn);
 
     // Set initial image state for transitioning.
     const imageState = 0;
@@ -372,6 +364,22 @@ class BackgroundImage extends React.Component {
         key={componentKey}
         {...remainingProps}
       >
+        {/* Create style element to transition between pseudo-elements. */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: pseudoStyles,
+          }}
+        />
+        {/* Set the original image(s) during SSR & if JS is disabled */}
+        {this.state.hasNoScript && (
+          <noscript>
+            <style
+              dangerouslySetInnerHTML={{
+                __html: noScriptPseudoStyles,
+              }}
+            />
+          </noscript>
+        )}
         {children}
       </Tag>
     );

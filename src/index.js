@@ -339,6 +339,7 @@ class BackgroundImage extends React.Component {
       fadeIn: shouldFadeIn,
       ...newImageSettings,
       originalData: fluid || fixed,
+      f,
     });
 
     const noScriptPseudoStyles = createNoScriptStyles({
@@ -348,10 +349,6 @@ class BackgroundImage extends React.Component {
       backgroundStyles: this.backgroundStyles,
       style,
     });
-
-    // console.table(newImageSettings)
-    console.log("pseudoStyles: ", pseudoStyles);
-    console.log("noScript: ", noScriptPseudoStyles);
 
     // Switch key between fluid & fixed.
     const componentKey = `${fluid ? `fluid` : ``}${
@@ -372,22 +369,6 @@ class BackgroundImage extends React.Component {
         key={componentKey}
         {...remainingProps}
       >
-        {/* Create style element to transition between pseudo-elements. */}
-        <style
-          dangerouslySetInnerHTML={{
-            __html: pseudoStyles,
-          }}
-        />
-        {/* Set the original image(s) during SSR & if JS is disabled */}
-        {this.state.hasNoScript && (
-          <noscript>
-            <style
-              dangerouslySetInnerHTML={{
-                __html: noScriptPseudoStyles,
-              }}
-            />
-          </noscript>
-        )}
         {children}
       </Tag>
     );

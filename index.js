@@ -349,7 +349,8 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
         style: style,
         fadeIn: shouldFadeIn
       }, newImageSettings), {}, {
-        originalData: fluid || fixed
+        originalData: fluid || fixed,
+        f: f
       }));
       var noScriptPseudoStyles = (0, _StyleCreation.createNoScriptStyles)({
         image: image,
@@ -358,10 +359,6 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
         backgroundStyles: this.backgroundStyles,
         style: style
       });
-
-      // console.table(newImageSettings)
-      console.log("pseudoStyles: ", pseudoStyles);
-      console.log("noScript: ", noScriptPseudoStyles);
 
       // Switch key between fluid & fixed.
       var componentKey = "".concat(fluid ? "fluid" : "").concat(fixed ? "fixed" : "", "-").concat(JSON.stringify(noScriptImageData.srcSet));
@@ -373,15 +370,7 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
         style: currentStyles,
         ref: this.handleRef,
         key: componentKey
-      }, remainingProps), /*#__PURE__*/_react["default"].createElement("style", {
-        dangerouslySetInnerHTML: {
-          __html: pseudoStyles
-        }
-      }), this.state.hasNoScript && /*#__PURE__*/_react["default"].createElement("noscript", null, /*#__PURE__*/_react["default"].createElement("style", {
-        dangerouslySetInnerHTML: {
-          __html: noScriptPseudoStyles
-        }
-      })), children);
+      }, remainingProps), children);
     }
   }]);
   return BackgroundImage;

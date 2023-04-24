@@ -349,8 +349,7 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
         style: style,
         fadeIn: shouldFadeIn
       }, newImageSettings), {}, {
-        originalData: fluid || fixed,
-        f: f
+        originalData: fluid || fixed
       }));
       var noScriptPseudoStyles = (0, _StyleCreation.createNoScriptStyles)({
         image: image,
@@ -359,6 +358,10 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
         backgroundStyles: this.backgroundStyles,
         style: style
       });
+
+      // console.table(newImageSettings)
+      // console.log(pseudoStyles)
+      // console.log(image, noScriptPseudoStyles)
 
       // Switch key between fluid & fixed.
       var componentKey = "".concat(fluid ? "fluid" : "").concat(fixed ? "fixed" : "", "-").concat(JSON.stringify(noScriptImageData.srcSet));

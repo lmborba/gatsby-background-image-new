@@ -339,7 +339,6 @@ class BackgroundImage extends React.Component {
       fadeIn: shouldFadeIn,
       ...newImageSettings,
       originalData: fluid || fixed,
-      f,
     });
 
     const noScriptPseudoStyles = createNoScriptStyles({
@@ -349,6 +348,10 @@ class BackgroundImage extends React.Component {
       backgroundStyles: this.backgroundStyles,
       style,
     });
+
+    // console.table(newImageSettings)
+    // console.log(pseudoStyles)
+    // console.log(image, noScriptPseudoStyles)
 
     // Switch key between fluid & fixed.
     const componentKey = `${fluid ? `fluid` : ``}${

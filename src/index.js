@@ -1,4 +1,5 @@
 import React from "react";
+import UUID from "short-uuid";
 import PropTypes from "prop-types";
 import getBackgroundStyles from "./lib/BackgroundUtils";
 import { convertProps, stripRemainingProps } from "./lib/HelperUtils";
@@ -377,10 +378,11 @@ class BackgroundImage extends React.Component {
           dangerouslySetInnerHTML={{
             __html: pseudoStyles,
           }}
+          key={UUID.generate()}
         />
         {/* Set the original image(s) during SSR & if JS is disabled */}
         {this.state.hasNoScript && (
-          <noscript key={"code_drawn"}>
+          <noscript>
             <style
               dangerouslySetInnerHTML={{
                 __html: noScriptPseudoStyles,

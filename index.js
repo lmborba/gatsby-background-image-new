@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
+var _shortUuid = _interopRequireDefault(require("short-uuid"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _BackgroundUtils = _interopRequireDefault(require("./lib/BackgroundUtils"));
 var _HelperUtils = require("./lib/HelperUtils");
@@ -376,10 +377,9 @@ var BackgroundImage = /*#__PURE__*/function (_React$Component) {
       }, remainingProps), /*#__PURE__*/_react["default"].createElement("style", {
         dangerouslySetInnerHTML: {
           __html: pseudoStyles
-        }
-      }), this.state.hasNoScript && /*#__PURE__*/_react["default"].createElement("noscript", {
-        key: "code_drawn"
-      }, /*#__PURE__*/_react["default"].createElement("style", {
+        },
+        key: _shortUuid["default"].generate()
+      }), this.state.hasNoScript && /*#__PURE__*/_react["default"].createElement("noscript", null, /*#__PURE__*/_react["default"].createElement("style", {
         dangerouslySetInnerHTML: {
           __html: noScriptPseudoStyles
         }
